@@ -4,7 +4,7 @@ import Textcolor from './Textcolor';
 import Counter from './Counter';
 import Tabularform from './Tabularform';
 import UseStateDemo from './UseStateDemo';
-
+import Clock from './Clock';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
 <Counter/>
 <Tabularform/>
 <UseStateDemo/>
+<Clock/>
 </>
     
   );
