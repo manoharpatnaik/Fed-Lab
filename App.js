@@ -6,6 +6,7 @@ import Tabularform from './Tabularform';
 import UseStateDemo from './UseStateDemo';
 import UseContextHook from './UseContextHook';
 import DataFetching from './DataFetching';
+import BMICalcDemo from './BMICalcDemo';
 
 
 function App() {
@@ -20,13 +21,13 @@ function App() {
 <UseStateDemo/>
 <UseContextHook/>
 <DataFetching/>
+<BMICalcDemo/>
 </>
     
   );
 }
 
 export default App;
-
 
 import React from 'react';
 import BlogContextDemo from './BlogContextDemo';
