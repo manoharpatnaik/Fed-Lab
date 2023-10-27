@@ -36,3 +36,24 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+const a=[1,2,3,4];
+const b=a.map((x)=>{
+	return x*2;
+});
+console.log(b);
+const c=[2,4,6,7];
+const d=c.filter((x)=>{
+	return x%2===0;
+});
+console.log(d);
+const e=[5,15,25,50];
+const f=e.reduce((sum,i)=>{
+	return sum+i;
+});
+console.log(f);
