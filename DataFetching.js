@@ -3,6 +3,7 @@ import axios from 'axios';
 
 function DataFetching() {
   const [posts, setPosts] = useState([]);
+
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/posts")
       .then((res) => {
@@ -16,13 +17,22 @@ function DataFetching() {
   return (
     <div>
       <h1>Data Fetching Demo</h1>
-      <ol>
-        {posts.map((post) => (
-          <li key={post.id}>
-            {post.id} - {post.title}
-          </li>
-        ))}
-      </ol>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+          </tr>
+        </thead>
+        <tbody>
+          {posts.map((post) => (
+            <tr key={post.id}>
+              <td>{post.id}</td>
+              <td>{post.title}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
