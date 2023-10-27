@@ -3,6 +3,7 @@ import DigitalClock from './DigitalClock';
 import Textcolor from './Textcolor';
 import Counter from './Counter';
 import Tabularform from './Tabularform';
+import UseStateDemo from './UseStateDemo';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 <Textcolor/>
 <Counter/>
 <Tabularform/>
+<UseStateDemo/>
 </>
     
   );
